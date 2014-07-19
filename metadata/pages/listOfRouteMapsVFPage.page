@@ -1,0 +1,61 @@
+<apex:page standardController="Route_Maps__c" showHeader="false" sidebar="false" docType="html-5.0" standardStylesheets="false">
+    <html>
+    <head>
+        <apex:stylesheet value="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700"/>
+        <apex:stylesheet value="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/css/semantic.css"/>
+        <script src="https://code.jquery.com/jquery-2.1.1.js"/>
+        <!--apex:stylesheet value="{!URLFOR($Resource.semanticcss)}"/-->
+        <!--apex:stylesheet value="{!URLFOR($Resource.summerofhacks, '/css/semantic.css')}"/-->
+        <apex:includeScript value="{!URLFOR($Resource.semanticjs)}"/>
+    </head>
+    <body>
+    
+     <h1><p>Register </p></h1>
+    <form action="">
+        
+        <div class="ui form segment">
+          
+          <div class="two fields">
+            <div class="field">
+              <label>First Name</label>
+                <input placeholder="First Name" type="text"/>
+            </div>
+            <div class="field">
+              <label>Last Name</label>
+                <input placeholder="Last Name" type="text"/>
+            </div>
+          </div>
+          
+                
+          <div class="field">
+            <label>Username</label>
+                <input placeholder="Username" type="text"/>
+          </div>
+                
+          <div class="field">
+            <label>Password</label>
+                <input type="password"/>
+          </div>
+                
+          <div class="inline field">
+            <div class="ui checkbox">
+                <input type="checkbox"/>
+              <label>I agree to the Terms and Conditions</label>
+            </div>
+          </div>
+                
+          <div class="ui blue submit button">Submit</div>
+                
+        </div>
+        
+        
+    </form>    
+        <script>
+            j$ = jQuery.noConflict();
+            j$(".signup").on("click",function(){
+                document.location = "/apex/listOfRouteMapsVFPage";
+            });
+        </script>
+    </body>
+    </html>
+</apex:page>

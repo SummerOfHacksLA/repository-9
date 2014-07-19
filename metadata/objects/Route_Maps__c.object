@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>User_Experience</fullName>
+        <fields>Favorite__c</fields>
+        <fields>Weather_Condition__c</fields>
+        <fields>Vehicles__c</fields>
+        <fields>Duration_of_Trip__c</fields>
+        <fields>Legal_Speed_Limit__c</fields>
+        <label>User Experience</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Trip details captured for the view, start and stop of the any route</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Duration__c</fullName>
+        <description>Number of days for trip- needs to be converted to Days hours and minutes</description>
+        <externalId>false</externalId>
+        <formula>End_Date_Time__c -  Start_Date_Time__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duration_of_Trip__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (  Duration__c  &gt; 0,
+TEXT(FLOOR(  Duration__c  )) &amp; &quot; days &quot; &amp;
+TEXT( FLOOR( 24 * (  Duration__c  - FLOOR(  Duration__c  ) ))) &amp; &quot; hours&quot; &amp;
+TEXT( ROUND(60 * (ROUND( 24 * (  Duration__c  - FLOOR(  Duration__c  ) ),8) - FLOOR(
+ROUND( 24 * (  Duration__c  - FLOOR(  Duration__c  ) ),8)) ),0)) &amp; &quot; min &quot;
+, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration of Trip</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Elevation__c</fullName>
+        <description>Automated elevation at time of Trip.</description>
+        <externalId>false</externalId>
+        <label>Elevation</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date/Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>End_Point__c</fullName>
+        <externalId>false</externalId>
+        <label>End Point</label>
+        <length>8</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Favorite__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Listed as a user favorite</description>
+        <externalId>false</externalId>
+        <label>Favorite</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Speed_Limit__c</fullName>
+        <description>Max speed limit on this trip allowed by law</description>
+        <externalId>false</externalId>
+        <label>Legal Speed Limit</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Report_Sub_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Report Sub type</label>
+        <picklist>
+            <controllingField>Report__c</controllingField>
+            <picklistValues>
+                <fullName>Light</fullName>
+                <controllingFieldValues>Traffic Jam</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <controllingFieldValues>Traffic Jam</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Harsh</fullName>
+                <controllingFieldValues>Traffic Jam</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pothole</fullName>
+                <controllingFieldValues>Hazard</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Normal</fullName>
+                <controllingFieldValues>Hazard</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Smooth</fullName>
+                <controllingFieldValues>Hazard</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hidden</fullName>
+                <controllingFieldValues>Police</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Visible</fullName>
+                <controllingFieldValues>Police</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Report__c</fullName>
+        <externalId>false</externalId>
+        <label>Report</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Traffic Jam</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hazard</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Police</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rider__c</fullName>
+        <description>Which rider/user took this trip?</description>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Route Maps</relationshipLabel>
+        <relationshipName>Trip_Segments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Start_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date/Time</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Start_Point__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Point</label>
+        <length>8</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vehicles__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup object to Vehicle</description>
+        <externalId>false</externalId>
+        <label>Vehicle</label>
+        <referenceTo>Vehicle__c</referenceTo>
+        <relationshipLabel>Route Maps</relationshipLabel>
+        <relationshipName>Route_Maps</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Weather_Condition__c</fullName>
+        <externalId>false</externalId>
+        <label>Weather Condition</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Sunny</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cloudy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rainy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fog</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FIRE!!!</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Where_Am_I__c</fullName>
+        <description>How many decimals.</description>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Where Am I?</label>
+        <required>false</required>
+        <scale>10</scale>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <label>Route Map</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Route Map Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Route Maps</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

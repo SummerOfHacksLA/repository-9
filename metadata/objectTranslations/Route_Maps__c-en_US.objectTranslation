@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Route Map</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Route Maps</value>
+    </caseValues>
+    <fields>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration of Trip --></label>
+        <name>Duration_of_Trip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Elevation --></label>
+        <name>Elevation__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date/Time --></label>
+        <name>End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Point --></label>
+        <name>End_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- Favorite --></label>
+        <name>Favorite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Speed Limit --></label>
+        <name>Legal_Speed_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Sub type --></label>
+        <name>Report_Sub_type__c</name>
+        <picklistValues>
+            <masterLabel>Harsh</masterLabel>
+            <translation><!-- Harsh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hidden</masterLabel>
+            <translation><!-- Hidden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Light</masterLabel>
+            <translation><!-- Light --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pothole</masterLabel>
+            <translation><!-- Pothole --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smooth</masterLabel>
+            <translation><!-- Smooth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visible</masterLabel>
+            <translation><!-- Visible --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report --></label>
+        <name>Report__c</name>
+        <picklistValues>
+            <masterLabel>Closure</masterLabel>
+            <translation><!-- Closure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hazard</masterLabel>
+            <translation><!-- Hazard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Police</masterLabel>
+            <translation><!-- Police --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traffic Jam</masterLabel>
+            <translation><!-- Traffic Jam --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Rider__c</name>
+        <relationshipLabel><!-- Route Maps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date/Time --></label>
+        <name>Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Point --></label>
+        <name>Start_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle --></label>
+        <name>Vehicles__c</name>
+        <relationshipLabel><!-- Route Maps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Weather Condition --></label>
+        <name>Weather_Condition__c</name>
+        <picklistValues>
+            <masterLabel>Cloudy</masterLabel>
+            <translation><!-- Cloudy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FIRE!!!</masterLabel>
+            <translation><!-- FIRE!!! --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fog</masterLabel>
+            <translation><!-- Fog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rainy</masterLabel>
+            <translation><!-- Rainy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunny</masterLabel>
+            <translation><!-- Sunny --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Where Am I? --></label>
+        <name>Where_Am_I__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
