@@ -1,0 +1,74 @@
+<apex:page standardController="User" extensions="routemapController" showHeader="false" sidebar="false" docType="html-5.0" standardStylesheets="false">
+    <html>
+    <head>
+        <apex:stylesheet value="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700"/>
+        <apex:stylesheet value="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/css/semantic.css"/>
+        <script src="https://code.jquery.com/jquery-2.1.1.js"/>
+        <!--apex:stylesheet value="{!URLFOR($Resource.semanticcss)}"/-->
+        <!--apex:stylesheet value="{!URLFOR($Resource.summerofhacks, '/css/semantic.css')}"/-->
+        <!--apex:includeScript value="{!URLFOR($Resource.semanticjs)}"/-->
+    </head>
+    <body>
+    
+     <p><img class="medium disabled ui image" value="{!$Resource.splashscreen}"/> </p>
+    <form action="">
+        
+        <div class="ui form segment">
+          <div class="field">
+            <label>Username</label>
+            <div class="ui left labeled icon input">
+                <input placeholder="Username" type="text" id="FirstName" name="FirstName" />
+              <i class="user icon"></i>
+              <div class="ui corner label">
+                <i class="icon asterisk"></i>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <div class="ui left labeled icon input">
+                <input placeholder="Password" type="password" id="LastName" name="LastName"/>
+              <i class="lock icon"></i>
+              <div class="ui corner label">
+                <i class="icon asterisk"></i>
+              </div>
+            </div>
+          </div>
+          <div class="ui error message">
+            <div class="header">We noticed some issues</div>
+          </div>
+          <div class="ui teal submit button">Login</div>
+          <div class="ui green signup button">Sign Up</div>
+        </div>
+        
+        
+    </form>    
+        <script type="text/javascript">
+        
+        j$ = jQuery.noConflict();
+        j$(document).ready(function() {
+            j$(".submit").click(function() { 
+                
+                routemapController.createContact(j$('#FirstName').val(),j$('#LastName').val(),handleContactCreate);
+                
+            });
+            j$(".signup").click(function(){
+                
+                document.location="/apex/listOfRouteMapsVFPage";
+            });
+        });
+        
+        function handleContactCreate(result,event) {
+            
+            
+             if(event.type == 'exception') {
+                  alert(event.message);
+              } else {
+               document.location='/apex/homePage'; 
+              }
+          
+       }
+    </script>
+    </body>
+    </html>
+</apex:page>

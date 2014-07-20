@@ -9,4 +9,6 @@
     <tab>Trip_Segments__c</tab>
     <tab>Route_Maps__c</tab>
     <tab>Vehicle__c</tab>
+    <tab>Motorcyco</tab>
+    <tab>My_Profile</tab>
 </CustomApplication>

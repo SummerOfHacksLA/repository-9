@@ -407,10 +407,6 @@
         <layout>WorkPerformanceCycle-Performance Cycle Layout</layout>
     </layoutAssignments>
     <pageAccesses>
-        <apexPage>firstPage</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>homePage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -419,11 +415,11 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>listOfRouteMapsPage</apexPage>
+        <apexPage>listOfRouteMapsVFPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>listOfRouteMapsVFPage</apexPage>
+        <apexPage>loginPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -447,10 +443,6 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>samplePage</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>saveRide</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -458,6 +450,14 @@
         <apexPage>segmentsListPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <tabVisibilities>
+        <tab>Motorcyco</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>My_Profile</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Route_Maps__c</tab>
         <visibility>DefaultOn</visibility>

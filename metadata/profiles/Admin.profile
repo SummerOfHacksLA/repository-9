@@ -434,10 +434,6 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
-        <apexPage>firstPage</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>homePage</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -446,11 +442,11 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>listOfRouteMapsPage</apexPage>
+        <apexPage>listOfRouteMapsVFPage</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>listOfRouteMapsVFPage</apexPage>
+        <apexPage>loginPage</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -474,10 +470,6 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>samplePage</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>saveRide</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -485,6 +477,14 @@
         <apexPage>segmentsListPage</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
+    <tabVisibilities>
+        <tab>Motorcyco</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>My_Profile</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>Route_Maps__c</tab>
         <visibility>DefaultOn</visibility>

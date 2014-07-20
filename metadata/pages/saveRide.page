@@ -43,10 +43,18 @@
             <input placeholder="Bike Info" type="text"/>
           </div>
           <div class="ui right floated segment">
-              <div class="ui blue submit button">Next</div>
+              <div class="ui blue submit next button"><a href="http://samanthaonline.in/labs/sumhack/route.html" style="text-decoration:none;color:white;">Next</a></div>
           </div>          
         </div>
-      
+      <script>
+      j$ = jQuery.noConflict();
+        j$(document).ready(function() {
+            j$(".next").click(function() { 
+                
+                
+            });
+        });
+      </script>
       
       </body>
       </html>

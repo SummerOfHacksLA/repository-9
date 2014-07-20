@@ -21,11 +21,29 @@ global with sharing class routemapController {
         //return 'Vasu';
     }
     
+//    @RemoteAction
+    
+    
     @RemoteAction
-    global static void createContact(string FirstName, string LastName) {
+    global static boolean createContact(string FirstName, string LastName) {
         System.debug('Test2');
-        Contact c = new Contact(FirstName=FirstName,LastName=LastName);
-        insert c;
+        Contact c = new Contact();
+
+        List<Contact> cs = [select id, FirstName, LastName from Contact];
+
+        for(Contact c2: cs){
+            if(c2.FirstName == FirstName && c2.LastName == LastName){
+                c = c2;
+            }
+        }
+        System.debug('contact is'+c.id);
+        if(c==null){
+            return false;
+        }
+        else{
+            return true;
+        }
+    //        insert c;
         //return c.Id;
         
     }

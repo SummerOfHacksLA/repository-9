@@ -126,6 +126,8 @@
     <tab>Trip_Segments__c</tab>
     <tab>Route_Maps__c</tab>
     <tab>Vehicle__c</tab>
+    <tab>Motorcyco</tab>
+    <tab>My_Profile</tab>
     <workspaceMappings>
         <mapping>
             <fieldName>AccountId</fieldName>
@@ -146,6 +148,9 @@
             <tab>standard-Lead</tab>
         </mapping>
         <mapping>
+            <tab>My_Profile</tab>
+        </mapping>
+        <mapping>
             <tab>standard-Knowledge</tab>
         </mapping>
         <mapping>
@@ -153,6 +158,9 @@
         </mapping>
         <mapping>
             <tab>standard-Account</tab>
+        </mapping>
+        <mapping>
+            <tab>Motorcyco</tab>
         </mapping>
         <mapping>
             <tab>Route_Maps__c</tab>

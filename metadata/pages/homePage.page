@@ -28,7 +28,7 @@
             
             <br/><br/>
              <center>
-                 <div class="ui primary button">
+                 <div class="ui primary record button">
                      Record
                  </div>
                  <br/><br/>
@@ -78,6 +78,15 @@
         } else {
           error('not supported');
         }
+        
+        j$ = jQuery.noConflict();
+        j$(document).ready(function() {
+            j$(".record").click(function() { 
+                
+                document.location='/apex/recordPage';
+                
+            });
+        });   
         
         </script>
         </body>
