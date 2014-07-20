@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vehicle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vehicles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact_Lookup__c</name>
+        <relationshipLabel><!-- Vehicles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Make --></label>
+        <name>Make__c</name>
+        <picklistValues>
+            <masterLabel>Aprila</masterLabel>
+            <translation><!-- Aprila --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BMW</masterLabel>
+            <translation><!-- BMW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buell</masterLabel>
+            <translation><!-- Buell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ducati</masterLabel>
+            <translation><!-- Ducati --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harley Davidson</masterLabel>
+            <translation><!-- Harley Davidson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honda</masterLabel>
+            <translation><!-- Honda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kawasaki</masterLabel>
+            <translation><!-- Kawasaki --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suzuki</masterLabel>
+            <translation><!-- Suzuki --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yamaha</masterLabel>
+            <translation><!-- Yamaha --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mileage --></label>
+        <name>Mileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+        <picklistValues>
+            <masterLabel>Buell</masterLabel>
+            <translation><!-- Buell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CBR650</masterLabel>
+            <translation><!-- CBR650 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CBR750</masterLabel>
+            <translation><!-- CBR750 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GSX</masterLabel>
+            <translation><!-- GSX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hypermotard</masterLabel>
+            <translation><!-- Hypermotard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monster</masterLabel>
+            <translation><!-- Monster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RS244</masterLabel>
+            <translation><!-- RS244 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuono</masterLabel>
+            <translation><!-- Tuono --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Cruiser</masterLabel>
+            <translation><!-- Cruiser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scooter</masterLabel>
+            <translation><!-- Scooter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sport bikes</masterLabel>
+            <translation><!-- Sport bikes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Touring</masterLabel>
+            <translation><!-- Touring --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

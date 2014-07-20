@@ -1,0 +1,58 @@
+<apex:page standardController="Route_Maps__c" extensions="routemapController" showHeader="false" sidebar="false" docType="html-5.0" standardStylesheets="false">
+  <html>
+    <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" class="ui" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/css/semantic.css"/>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUuL0HfxsFAzAy-daytqKr-sZjb9X4Blo&sensor=true"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/javascript/semantic.min.js"></script>
+    <style>
+          html, body, #map-canvas {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+          }
+        </style>
+    </head>
+    <body>
+    <center><h3 class="ui dividing header">Record</h3>
+    <div class="ui large active inline loader" style="font-size: 1.5em" >GPS</div></center>
+    <div class="ui blue inverted segment" style="width:300px;left:50%;margin-left:-150px;">
+      <p><center><div id="seconds" style="font-size: 3em">00</div><br/> Elapsed Time</center></p>
+    </div>
+    <div class="ui two column grid">
+      <div class="column">
+        <div class="ui segment color red">
+        <center>
+        Distance<br/> 2.0 Mi
+        </center>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment color green">
+        <center>
+        Avg Speed<br/> 25 Mi
+        </center>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <center><div class="positive ui button">Save Ride</div></center>
+    
+    <script>
+    var myVar = setInterval(function(){myTimer()}, 1000);
+    var k = 0;
+    function myTimer() {
+     k++;
+     if(k<10) {
+     document.getElementById("seconds").innerHTML= "0"+k;
+     } else {
+     document.getElementById("seconds").innerHTML= k;
+     }
+    }
+    
+    </script>
+    </body>
+    </html>
+</apex:page>

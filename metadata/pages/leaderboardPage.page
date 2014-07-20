@@ -1,0 +1,88 @@
+<apex:page standardController="Route_Maps__c" extensions="routemapController" showHeader="false" sidebar="false" docType="html-5.0" standardStylesheets="false">
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" class="ui" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/css/semantic.css"/>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUuL0HfxsFAzAy-daytqKr-sZjb9X4Blo&sensor=true"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/javascript/semantic.min.js"></script>
+        <style type="text/css">
+              #map-canvas {
+                  height: 300px;
+              }
+              
+              #map-canvas img {
+                  max-width: none;
+              }
+            </style>
+        </head>
+      <body>
+      <center><h3 class="ui dividing header">XYZ - Map View</h3></center>
+      
+      <iframe width="100%" height="280" frameborder="0" src="https://widgets.scribblemaps.com/sm/?d=true&amp;z=true&amp;l=true&amp;mc=true&amp;lat=33.34489134882284&amp;lng=-116.876153289032&amp;vz=14&amp;width=320&amp;height=380&amp;id=76Qb08ckgN" style="border:0"></iframe>
+      <div style="background-color:white;height:30px;margin-top:-20px;width:100%;position:absolute;"></div>
+      
+       
+          <div class="ui divding header">
+          </div>
+          <div class="ui pointing below label"><h3 class="ui dividing header">XYZ</h3></div>
+          <div class="ui two column grid">
+            <div class="column">   
+              <div class="ui segment color red">
+                <center>
+                    Distance<br/> 2.0 Mi
+                </center>
+            </div>
+        </div>
+     
+        <div class="column">
+            <div class="ui segment color green" style="color:brown;">
+                <center>
+                    11/23 <br/> RANK
+                </center>
+            </div>
+        </div>
+        </div>
+        <br/><br/>
+        
+      <table class="ui table segment">
+          <thead>
+            <tr>
+                <th>S.No</th>
+                <th>LEADER BOARD</th>
+                <th>LAP TIME</th>
+                <th>DATE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>No Name Specified</td>
+              <td>90 mins</td>
+              <td>None</td>
+            </tr>
+            <tr class="positive">
+              <td>2</td>
+              <td>Jimmy</td>
+              <td><i class="icon checkmark"></i> 124 mins</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Jamie</td>
+              <td>32 mins</td>
+              <td> Requires call</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Jill</td>
+              <td>27 mins</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </body>
+      </html>
+</apex:page>

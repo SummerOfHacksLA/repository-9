@@ -1,0 +1,55 @@
+<apex:page showHeader="false" sidebar="false" docType="html-5.0" standardStylesheets="false">
+    <html>
+    <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" class="ui" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/css/semantic.css"/>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUuL0HfxsFAzAy-daytqKr-sZjb9X4Blo&sensor=true"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/javascript/semantic.min.js"></script>
+    <style>
+          html, body, #map-canvas {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+          }
+        </style>
+    </head>
+    <body style="padding:20px">
+    <center><h3 class="ui dividing header">Segments</h3></center>
+    <div class="ui right floated segment">
+      <p>4 Milestones
+    </p></div>
+    <div class="ui left floated segment">
+      Suggested Segments
+    </div>
+    <div style="clear:both"></div>
+    <div class="ui blue inverted segment">
+      <p style="font-size: 1.5em;">Segment 1 - &#9733;&#9733;&#9733;&#9734;&#9734; <div class="ui right floated segment"> 1.4 miles </div></p>
+    </div>
+    <div class="ui orange inverted segment">
+      <p style="font-size: 1.5em;">Segment 2 - &#9733;&#9733;&#9733;&#9733;&#9734; <div class="ui right floated segment"> 1.8 miles </div></p>
+    </div>
+    <div class="ui green inverted segment">
+      <p style="font-size: 1.5em;">Segment 3 - &#9733;&#9733;&#9733;&#9733;&#9734;<div class="ui right floated segment"> 2.2 miles </div></p>
+    </div>
+    <div class="ui purple inverted segment">
+      <p style="font-size: 1.5em;">Segment 4 - &#9733;&#9734;&#9734;&#9734;&#9734;<div class="ui right floated segment"> 3.1 miles </div></p>
+    </div>
+    
+    <script>
+    var myVar = setInterval(function(){myTimer()}, 1000);
+    var k = 0;
+    function myTimer() {
+     k++;
+     if(k<10) {
+     document.getElementById("seconds").innerHTML= "0"+k;
+     } else {
+     document.getElementById("seconds").innerHTML= k;
+     }
+    }
+    
+    </script>
+    </body>
+    </html>
+</apex:page>

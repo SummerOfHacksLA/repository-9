@@ -1,0 +1,82 @@
+<apex:page standardController="Route_Maps__c" showHeader="false" sidebar="false" docType="html-5.0" standardStylesheets="false">
+    <html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" class="ui" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/css/semantic.css"/>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUuL0HfxsFAzAy-daytqKr-sZjb9X4Blo&sensor=true"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/javascript/semantic.min.js"></script>
+        <style type="text/css">
+              #map-canvas {
+                  height: 300px;
+              }
+              
+              #map-canvas img {
+                  max-width: none;
+              }
+            </style>
+        </head>
+        <body>
+        <div>
+            <div class="ui grid">
+              <div class="four wide column">
+                   <div class="ui ribbon blue label">Profile</div>
+                       <img class="circular ui image" src="https://www.metzeler.com/site/.imaging/stk/com/stage/media/MetzelerSite/DE/grafik-30-05/ME888orizzontale_black5/original/ME888orizzontale_black52.jpg"/>
+                   
+              </div>
+              <div class="four wide column">
+                
+              </div>
+              <div class="ui divider"></div>
+              
+              <div class="four wide column">
+                  <div class="ui circular segment">
+                      <h2 class="ui header">
+                        Following
+                        <div class="sub header">144</div>
+                      </h2>
+                    </div>
+                    
+                    <div class="ui inverted circular green segment">
+                     
+                         <h2 class="ui inverted header">
+                            Followers
+                            <div class="sub header">72</div>
+                          </h2>
+                      
+                    </div>
+              </div>
+              </div>
+              <div class="ui divider"></div>
+              
+              <div class="ui ribbon blue label">My Ride</div>
+              
+              <div class="ui form segment">
+                  
+                  <div class="field">
+                    <label>Type</label>
+                    <input placeholder="Type" type="text"/>
+                  </div>
+                  <div class="field">
+                    <label>Make</label>
+                    <input placeholder="Make" type="text"/>
+                  </div>
+                  
+                  <div class="field">
+                    <label>Model</label>
+                    <div class="ui fluid selection dropdown">
+                      <div class="text">Select</div>
+                          <i class="dropdown icon"></i>
+                          <input type="hidden" name="gender"/>
+                            <div class="menu">
+                              <div class="item" data-value="Honda">CBR</div>
+                              <div class="item" data-value="Suzuki">Hayabusa</div>
+                            </div>                        
+                      </div>
+                    </div>
+                </div>
+              </div>
+        </body>
+        </html>
+</apex:page>
